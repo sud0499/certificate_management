@@ -26,10 +26,8 @@ app.use(bodyParser.json());
 //configuring morgan(logger)
 app.use(morgan("dev"));
 
-
 app.use("/users",userRouter);
 app.use("/certs",certRouter);
-
 
 if(process.env.NODE_ENV==="production"){
     app.use(express.static(path.join(__dirname,'/Frontend/dist/')));
