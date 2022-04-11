@@ -26,10 +26,7 @@ app.use(bodyParser.json());
 //configuring morgan(logger)
 app.use(morgan("dev"));
 
-app.get("/",(req,res,next)=>{
-    res.json({message:"This works, thankyou"})
-    next();
-});
+
 app.use("/users",userRouter);
 app.use("/certs",certRouter);
 
