@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix Frontend && npm run build --prefix Frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Frontend && npm run build --prefix Frontend"
   },
   "author": "Sudhanshu",
   "license": "ISC",
@@ -18,6 +18,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.4",
     "morgan": "^1.10.0",
+    "path": "^0.12.7",
     "yarn": "^1.22.17"
   },
   "devDependencies": {
