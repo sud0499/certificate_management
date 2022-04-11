@@ -32,7 +32,7 @@ export default {
   methods: {
     async updateCert() {
         console.warn(this.rollNo);
-      let result = await axios.patch(`http://localhost:4000/certs/${this.rollNo}`,{
+      let result = await axios.patch(`https://evening-inlet-19531.herokuapp.com/certs/${this.rollNo}`,{
         name: this.name,
         course: this.course,
         email: this.email,

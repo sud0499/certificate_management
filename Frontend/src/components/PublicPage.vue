@@ -49,7 +49,7 @@ export default {
   methods: {
     async search() {
       let result = await axios.get(
-        `http://localhost:4000/certs/${this.certId}`
+        `https://evening-inlet-19531.herokuapp.com/certs/${this.certId}`
       );
       if (result.status == 200) {
         localStorage.clear();

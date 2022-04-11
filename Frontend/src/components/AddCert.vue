@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     async signup() {
-      let result = await axios.post("http://localhost:4000/certs/", {
+      let result = await axios.post("https://evening-inlet-19531.herokuapp.com/certs/", {
         name: this.name,
         course: this.course,
         email: this.email,

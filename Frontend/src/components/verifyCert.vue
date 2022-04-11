@@ -40,7 +40,7 @@ export default {
       }
   },
   async created(){
-    const res= await axios.get(`http://localhost:4000/certs/${localStorage.getItem("certId")}`);
+    const res= await axios.get(`https://evening-inlet-19531.herokuapp.com/certs/${localStorage.getItem("certId")}`);
     this.user=res.data.cert[0]
   },
   methods: {
