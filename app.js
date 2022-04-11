@@ -35,10 +35,10 @@ app.use("/certs",certRouter);
 
 
 if(process.env.NODE_ENV==="production"){
-    app.use(express.static(path.join(__dirname,'/Frontend/dist')));
+    app.use(express.static(path.join(__dirname,'/Frontend/dist/')));
 
     app.get('*',(req,res)=>{
-        res.sendFile(path.join(__dirname,'Frontend','dist','index.html'))
+        res.sendFile(path.join(__dirname,'Frontend/dist/index.html'))
     })
 }
 else{
@@ -46,7 +46,7 @@ else{
         res.send("API Running")
     })
 }
-const PORT=4000;
+const PORT=process.env.PORT;
 const server = http.createServer(app);
 server.listen(PORT,()=>{
     console.log(`server running on port ${PORT}`);
