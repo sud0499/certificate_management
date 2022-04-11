@@ -1,4 +1,5 @@
 <template>
+<div>
 <NavBar/>
   <div class="admin">
     <div class="login">
@@ -11,6 +12,7 @@
       <!-- <router-link to="/sign-Up">SignUp</router-link> -->
     </p>
   </div>
+</div>
 </template>
 
 <script>
@@ -51,6 +53,6 @@ export default {
 }
 .login{
   width: 20vw;
-  margin:11%;
+  margin:10%;
 }
 </style>

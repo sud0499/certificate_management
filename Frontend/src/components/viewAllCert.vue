@@ -1,45 +1,49 @@
 <template>
-<LoginNavBar/>
   <div>
-    <h1>All Certificates Issued</h1>
-    <table>
-      <thead>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Course</th>
-        <th>Email</th>
-        <th>Roll Number</th>
-        <th>date</th>
-      </thead>
-      <tbody>
-        <tr v-for="item in list" :key="item">
-          <td>{{ item.cert._id }}</td>
-          <td>{{ item.cert.name }}</td>
-          <td>{{ item.cert.course }}</td>
-          <td>{{ item.cert.email }}</td>
-          <td>{{ item.cert.rollNo }}</td>
-          <td>{{ item.cert.date }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <LoginNavBar />
+    <div>
+      <h1>All Certificates Issued</h1>
+      <table>
+        <thead>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Email</th>
+          <th>Roll Number</th>
+          <th>date</th>
+        </thead>
+        <tbody>
+          <tr v-for="item in list" :key="item">
+            <td>{{ item.cert._id }}</td>
+            <td>{{ item.cert.name }}</td>
+            <td>{{ item.cert.course }}</td>
+            <td>{{ item.cert.email }}</td>
+            <td>{{ item.cert.rollNo }}</td>
+            <td>{{ item.cert.date }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
 <script>
-import LoginNavBar from './LoginNavBar.vue'
+import LoginNavBar from "./LoginNavBar.vue";
 import axios from "axios";
 export default {
   name: "viewAllCert",
-  components:{
-        LoginNavBar
-    },
+  components: {
+    LoginNavBar,
+  },
   data() {
     return {
       list: [],
     };
   },
   async mounted() {
-    let result = await axios.get("https://evening-inlet-19531.herokuapp.com/certs/");
+    let result = await axios.get(
+      "https://evening-inlet-19531.herokuapp.com/certs/"
+    );
     this.list = result.data.users;
   },
 };
@@ -53,7 +57,8 @@ table {
   width: 99vw;
 }
 th,
-td,h1 {
+td,
+h1 {
   padding: 15px;
   text-align: center;
 }

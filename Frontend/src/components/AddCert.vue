@@ -1,15 +1,17 @@
 <template>
+<div>
   <LoginNavBar/>
   <div class=cert>
     <div id="ftr"><NavFeature /></div>
     <div class="form">
-        <div><input type="text" placeholder="Student Name" v-model="name" required></div>
-        <div><input type="text" placeholder="Course" v-model="course" required></div>
-        <div><input type="text" placeholder="Email" v-model="email" required></div>
-        <div><input type="text" placeholder="Roll No" v-model="rollNo" required></div>
-        <div><button v-on:click="signup()">Add</button></div>
-        </div>   
+      <div><input type="text" placeholder="Student Name" v-model="name" required></div>
+      <div><input type="text" placeholder="Course" v-model="course" required></div>
+      <div><input type="text" placeholder="Email" v-model="email" required></div>
+      <div><input type="text" placeholder="Roll No" v-model="rollNo" required></div>
+      <div><button v-on:click="signup()">Add</button></div>
+    </div>   
   </div>
+</div>
 </template>
 <script scoped>
 import LoginNavBar from './LoginNavBar.vue'
