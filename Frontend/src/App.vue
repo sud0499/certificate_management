@@ -79,4 +79,7 @@ a:hover,
 span {
   color: red;
 }
+.page{
+  height: 100vh;
+}
 </style>

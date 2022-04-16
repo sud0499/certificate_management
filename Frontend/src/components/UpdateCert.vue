@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <LoginNavBar />
     <div class="cert">
       <div id="ftr"><NavFeature /></div>

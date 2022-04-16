@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <NavBar />
     <div class="public">
       <div id="public_text">
@@ -81,5 +81,13 @@ export default {
 }
 h1 {
   color: rgb(120, 70, 70);
+}
+@media only screen and (max-width: 668px) {
+  #public_text {
+    display: none;
+  }
+ #public_search{
+  width: 80vw;
+} 
 }
 </style>
