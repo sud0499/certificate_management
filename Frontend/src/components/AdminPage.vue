@@ -37,6 +37,8 @@ export default {
       if (result.status == 200) {
         localStorage.setItem("user-info", JSON.stringify(result.data[0]));
         this.$router.push({ name:'AddCert' });
+      }else{
+        alert("Invalid User");
       }
     },
   },
