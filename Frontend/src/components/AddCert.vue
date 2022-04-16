@@ -71,6 +71,20 @@ export default {
     flex-grow: 0.8;
 }
 .form{
-    padding: 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+button{
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media only screen and (max-width: 668px) {
+  .cert{
+    flex-direction: column;
+  }
 }
 </style>

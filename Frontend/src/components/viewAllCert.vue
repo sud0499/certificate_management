@@ -54,12 +54,11 @@ h1 {
   color: red;
 }
 table {
-  width: 99vw;
+  width: 100vw;
 }
 th,
 td,
 h1 {
-  padding: 15px;
   text-align: center;
 }
 thead,
@@ -68,5 +67,30 @@ tr:nth-child(even) {
 }
 tr:nth-child(odd) {
   background-color: #ffffff;
+}
+@media only screen and (max-width: 800px) {
+  th,td,h1 {
+  padding: 6px;
+}
+table{
+  font-size: 0.45em;
+}
+#n_deadspace{
+  width:70vw;
+}
+h1{
+  font-size: 0.7em;
+}
+}
+@media only screen and (min-width: 801px) {
+  th,td,h1 {
+  padding: 12px;
+}
+table{
+  font-size: 0.8em;
+}
+#n_deadspace{
+  width:70vw;
+}
 }
 </style>

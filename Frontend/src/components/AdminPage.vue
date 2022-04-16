@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="page">
 <NavBar/>
   <div class="admin">
     <div class="login">
@@ -54,5 +54,10 @@ export default {
 .login{
   width: 20vw;
   margin:10%;
+}
+@media only screen and (max-width: 668px) {
+  .login{
+    width: 60vw;
+  }
 }
 </style>
