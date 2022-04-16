@@ -1,4 +1,5 @@
 <template>
+<div class="page">
 <NavBar/>
     <div>
         <div class="q_parent">
@@ -24,7 +25,8 @@
             <div>design:<span id="dname">Sudhanshu</span></div>
         </footer>
     </div>
-    </div>
+</div>
+</div>
 </template>
 
 
@@ -45,7 +47,6 @@ export default {
     color: rgb(49, 49, 49);
     background-color: antiquewhite;  
     padding: 8%;
-    font-family: Arial, Helvetica, sans-serif;
     height: 60vh;
 }
 
